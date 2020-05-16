@@ -28,12 +28,42 @@
 <!-- Body -->
 <body class="w3-light-grey">
 
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-dark-grey w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="2research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESEARCH</a>
+    <a href="teaching.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING</a>
+    <a href="problems.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OPEN PROBLEMS</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <!-- A dropdown menu, maybe use later?
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    -->
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+  <a href="2research.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEACHING</a>
+  <a href="problems.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OPEN PROBLEMS</a>
+</div>
+
+
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1400px">
 
 <!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
+<header class="w3-container w3-center w3-padding-64"> 
   <h1><b>Research</b></h1>
 </header>
 
@@ -153,35 +183,6 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- END paper entries -->
 </div>
 
-<!-- Navigation -->
-<div class="w3-col l4">
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>See more</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-        <a href="2research.html"> 
-            <li class="w3-padding-16">
-                <!-- Add picture later: <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px"> -->
-                <span class="w3-large">Research</span><br>
-                <a href="#talks"><span>Articles and talks</span></a>
-            </li>
-        </a>
-        <a href="teaching.html"> 
-            <li class="w3-padding-16">
-                <span class="w3-large">Teaching</span>
-            </li>
-        </a>
-        <li class="w3-padding-16">
-          <span class="w3-large">Open problems</span>
-        </li>
-    </ul>
-  </div>
-  <hr> 
-
-<!-- END navigation -->
-</div>
-
 
 
 
@@ -209,6 +210,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
         <div class="w3-container">
             <ul>
+                <li><h5>tba. <span class="w3-opacity"> Abend seminar (online), University of Western Sydney (Jun. 2020)</span></h5></li>
                 <li><h5>Fine structure of C*-algebras associated to topological dynamical systems, <span class="w3-opacity"> Seminar, Queen Mary University, England (Nov. 2019)</span></h5></li>
                 <li><h5>Fine structure of C*-algebras associated to topological dynamical systems, <span class="w3-opacity"> C*-algebra Oberseminar, WWU M&uumlnster, Germany (Nov. 2019)</span></h5></li>
                 <li><h5>Fine structure of C*-algebras associated to topological dynamical systems, <span class="w3-opacity">Analysis seminar, KU Leuven, Belgium (Oct. 2019)</span></h5></li>
